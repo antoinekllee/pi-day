@@ -5,6 +5,8 @@ import styles from "./SynergyGame.module.css"
 
 const SynergyGame = () =>
 {
+  const unityLoaderUrl = process.env.PUBLIC_URL + '/unitybuild';
+
     const {
         unityProvider,
         isLoaded,
@@ -16,10 +18,10 @@ const SynergyGame = () =>
         takeScreenshot,
         unload,
       } = useUnityContext({
-        loaderUrl: "/unitybuild/Synergy-Game-WebGL.loader.js",
-        dataUrl: "/unitybuild/Synergy-Game-WebGL.data",
-        frameworkUrl: "/unitybuild/Synergy-Game-WebGL.framework.js",
-        codeUrl: "/unitybuild/Synergy-Game-WebGL.wasm",
+        loaderUrl: `${unityLoaderUrl}/Synergy-Game-WebGL.loader.js`,
+        dataUrl: `${unityLoaderUrl}/Synergy-Game-WebGL.data`,
+        frameworkUrl: `${unityLoaderUrl}/Synergy-Game-WebGL.framework.js`,
+        codeUrl: `${unityLoaderUrl}/Synergy-Game-WebGL.wasm`,
         webglContextAttributes: {
           preserveDrawingBuffer: true,
         },
