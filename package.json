@@ -1,7 +1,7 @@
 {
-  "name": "react-unity-webgl-template",
+  "homepage": "http://antoinekllee.github.io/pi-day",
+  "name": "pi-day",
   "version": "3.0.0",
-  "description": "An out-of-the-box sandbox environment for the React Unity WebGL package. This environment contains a Create-React-App including both the source and build of a Unity WebGL project, allowing to test and debug all of its features.",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -19,6 +19,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -40,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
