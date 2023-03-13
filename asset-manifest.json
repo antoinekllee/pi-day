@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/pi-day/static/css/main.de2fa78b.css",
-    "main.js": "/pi-day/static/js/main.5c5dcd80.js",
+    "main.js": "/pi-day/static/js/main.b441ac1f.js",
     "index.html": "/pi-day/index.html",
     "main.de2fa78b.css.map": "/pi-day/static/css/main.de2fa78b.css.map",
-    "main.5c5dcd80.js.map": "/pi-day/static/js/main.5c5dcd80.js.map"
+    "main.b441ac1f.js.map": "/pi-day/static/js/main.b441ac1f.js.map"
   },
   "entrypoints": [
     "static/css/main.de2fa78b.css",
-    "static/js/main.5c5dcd80.js"
+    "static/js/main.b441ac1f.js"
   ]
 }
