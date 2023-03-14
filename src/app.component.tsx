@@ -1,13 +1,13 @@
-import { useCallback, useEffect, useState } from "react";
-import { Unity, useUnityContext } from "react-unity-webgl";
-import styles from "./app.module.css";
+import { BrowserRouter } from "react-router-dom";
+import AnimatedRoutes from './components/AnimatedRoutes.component';
 
-import { SynergyGame } from "./pages/SynergyGame.component";
-
-const App = () => {
-  return <div>
-    <SynergyGame />
-  </div>; 
+const App = () => 
+{
+  return (<div>
+    <BrowserRouter>
+      <AnimatedRoutes />
+    </BrowserRouter>
+  </div>)
 };
 
 export { App };

@@ -1,48 +1,113 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-  
-  .container .unityWrapper {
-    background: #cecece;
-    /* width: 1920px*0.7;
-    height: 1080px*0.7; */
-    /* width: 90%; 
-    height: width; */
-    /* width: 500px; */
-    height: 80vh;
-    aspect-ratio: 1.77777778;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .container .unityWrapper .loadingBar {
-    background: #8c8c8c;
-    width: 400px;
-    height: 10px;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  .container .unityWrapper .loadingBar .loadingBarFill {
-    height: 6px;
-    border-radius: 5px;
-    margin: 2px;
-    background: #ffffff;
-    transition: 0.3s width ease-out;
-  }
-  
-  .container .unityWrapper canvas {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .container .screenshots {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  
+.container 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 40px; */
+}
+
+.container .unityWrapper {
+  background: var(--panel);
+  height: 80vh;
+  aspect-ratio: 1.77777778;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .unityWrapper .loadingBar {
+  background: var(--gray);
+  width: 400px;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.container .unityWrapper .loadingBar .loadingBarFill {
+  height: 6px;
+  border-radius: 5px;
+  margin: 2px;
+  background: var(--yellow);
+  transition: 0.3s width ease-out;
+}
+
+.container .unityWrapper canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.container .screenshots {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+.title
+{
+  color: var(--text);
+  position: relative; 
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+
+.title:after 
+{
+  position: absolute;
+  content: '';
+  height: 2px;
+  bottom: -25px; 
+  background: var(--gray);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 35%;
+  transition: 0.5s;
+}
+
+.title:hover:after {
+  width: 100%;
+  background: var(--yellow);
+}
+
+.icon
+{
+  color: var(--yellow);
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.buttons
+{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.title
+{
+  color: var(--text);
+  position: relative; 
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+
+.menuButton
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  margin: 30px;
+
+  width: 120px;
+}
+
+.menuIcon
+{
+    vertical-align: middle;
+    margin-bottom: 3px;
+    margin-right: 10px;
+}
